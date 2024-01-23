@@ -7,6 +7,7 @@ jobs:
     steps:
     - name: First Step
       uses: actions/Checkout@v2
+    - name: Second Job
       run: date
   job2:
     name: Second Job
@@ -14,6 +15,7 @@ jobs:
     steps:
     - name: First Step
       uses: actions/checkout@v2
+    - name: Second Job
       run: Get-Date
   job3:
     name: third Job
@@ -21,6 +23,7 @@ jobs:
     steps:
     - name: First Step
       uses: actions/checkout@v2
+    - name: Second Job
       run: date
     
   job4:
@@ -30,4 +33,5 @@ jobs:
     steps:
     - name: First Step
       uses: actions/checkout@v2
+    - name: Second Job
       run: echo  Hi
