@@ -2,7 +2,7 @@ name: complex
 on: push
 jobs:
   job1:
-    name: First Job
+    name: First Job 
     runs-on: ubuntu-latest
     steps:
     - name: First Step
