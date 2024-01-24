@@ -14,6 +14,8 @@ jobs:
       env:
         STEP_ENVIRONMENT_VARIABLE: 'Step Environment Variable'
         ORVER_RIDE: 'Step Override'
+      run: |
+        echo " hi " 
       
         
         
