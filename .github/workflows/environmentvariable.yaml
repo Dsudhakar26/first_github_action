@@ -14,18 +14,7 @@ jobs:
       env:
         STEP_ENVIRONMENT_VARIABLE: 'Step Environment Variable'
         ORVER_RIDE: 'Step Override'
-      run:  |
-        echo " Accessing through bash script variable"
-        echo " 1. $WORKSPACE_ENVIRONMENT_VARIABLE"
-        echo " 2. $JOB_ENVIRONMENT_VARIABLE "
-        echo " 3. $STEP_ENVIRONMENT_VARIABLE "
-        echo " 4. $OVER_RIDE "
-        echo " -------------------------------------"
-        echo " Accessing the Env varialbes through the YAML syntax"
-        echo "5. ${{WORKSPACE_ENVIRONMENT_VARIABLE}}"
-        echo "6. ${{JOB_ENVIRONMENT_VARIABLE}}"
-        echo "7. ${{STEP_ENVIRONMENT_VARIABLE}}"
-        echo "8. ${{OVER_RIDE}}"
+      
         
         
       
