@@ -14,7 +14,7 @@ jobs:
       env:
         STEP_ENVIRONMENT_VARIABLE: 'Step Environment Variable'
         ORVER_RIDE: 'Step Override'
-      run: |
+      run:  |
         echo " Accessing through bash script variable"
         echo " 1. $WORKSPACE_ENVIRONMENT_VARIABLE"
         echo " 2. $JOB_ENVIRONMENT_VARIABLE "
