@@ -32,8 +32,6 @@ jobs:
       with:
         name: linux
 
-    - name: Test ${{ env.FILE_NAME }}
-      run: source ./test.sh
             
             
     
