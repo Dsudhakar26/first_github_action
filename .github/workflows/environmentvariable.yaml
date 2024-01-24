@@ -7,13 +7,13 @@ jobs:
   ubuntu:
     env:
       JOB_ENVIRONMENT_VARIABLE: 'JOB Environment Variable'
-      OVERRIDE: 'Job Override'
+      OVER_RIDE: 'Job Override'
     runs-on: ubuntu-latest
     steps:
     - name: print Environment variable
       env:
         STEP_ENVIRONMENT_VARIABLE: 'Step Environment Variable'
-        ORVER_RIDE: 'Step Override'
+        OVER_RIDE: 'Step Override'
       run: |
         echo " Accessing Environment Variable through bash script variable"
         echo " 1. $WORKSPACE_ENVIRONMENT_VARIABLE"
