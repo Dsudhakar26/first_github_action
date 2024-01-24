@@ -1,19 +1,19 @@
 name: Environment Variable demo
 env:
-  WORKSPACE_ENVIRONMENT_VARIABLE: "Workspace Environment Variable"
-  OVER_RIDE: "WorkSpace Override"
+  WORKSPACE_ENVIRONMENT_VARIABLE: 'Workspace Environment Variable'
+  OVER_RIDE: 'WorkSpace Override'
 on: push
 jobs:
   ubuntu:
     env:
-      JOB_ENVIRONMENT_VARIABLE: "JOB Environment Variable"
-      OVERRIDE: "Job Override"
+      JOB_ENVIRONMENT_VARIABLE: 'JOB Environment Variable'
+      OVERRIDE: 'Job Override'
     runs-on: ubuntu-latest
     steps:
     - name: print Environment variable
       env:
-        STEP_ENVIRONMENT_VARIABLE: "Step Environment Variable"
-        ORVER_RIDE: "Step Override"
+        STEP_ENVIRONMENT_VARIABLE: 'Step Environment Variable'
+        ORVER_RIDE: 'Step Override'
       run: |
         echo " Accessing through bash script variable"
         echo " 1. $WORKSPACE_ENVIRONMENT_VARIABLE"
