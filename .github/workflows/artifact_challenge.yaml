@@ -1,1 +1,18 @@
-n
+name: Artifcatory upload challenge
+on: push
+
+env:
+  FILE_NAME: test
+jobs:
+  artifact:
+    runs-on: ubuntu-latest
+    steps: 
+    - name: checkout the code
+      uses: actions/checkout@v2
+    - name: Upload a Build Artifact
+      uses: actions/upload-artifact@v4.3.0
+      with:
+        name: ${{env.FILE_NAME}}
+        path: .
+        
+            
