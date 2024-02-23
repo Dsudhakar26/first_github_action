@@ -2,7 +2,7 @@ name: Environment Variable demo
 env:
   WORKSPACE_ENVIRONMENT_VARIABLE: 'Workspace Environment Variable'
   OVER_RIDE: 'WorkSpace Override'
-on: pull_request
+on: push
 jobs:
   ubuntu:
     env:
